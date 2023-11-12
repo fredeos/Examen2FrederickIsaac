@@ -20,6 +20,9 @@ class Pruebas_MiClase(unittest.TestCase):
     def test_VerfificaListaCanciones(self):
         self.assertEqual(self.instancia.VerificaListaCanciones(self.instancia.listaCanciones), True) # 1era prueba del metodo
         self.assertEqual(self.instancia.VerificaListaCanciones(["Cancion1", None, "Cancion3"]), False) # 2da prueba del metodo
-
+    
+    def test_Encuentra(self):
+        self.assertEqual(self.instancia.Encuentra([1,2,3,4],3),True) # 1era prueba del metodo
+        self.assertEqual(self.instancia.Encuentra([1,2,3,4],7),False) # 2da prueba del metodo
 if __name__ == "__main__":
     unittest.main()
