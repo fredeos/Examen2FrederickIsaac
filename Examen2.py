@@ -30,6 +30,14 @@ class MiClase:
         if elemento in lista:
             return True
         return False
+    
+    def ObtienePares(self, numero):
+        # Convierte el número en una cadena para contar los dígitos impares
+        numero_str = str(numero)
+        digitos_pares = [int(digit) for digit in numero_str if int(digit) % 2 == 0]
+        return len(digitos_pares)
+    
+
 ################################################################################################
 #Ejemplo de ejecución
 # Crear un objeto de la clase MiClase

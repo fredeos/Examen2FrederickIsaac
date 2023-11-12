@@ -24,5 +24,10 @@ class Pruebas_MiClase(unittest.TestCase):
     def test_Encuentra(self):
         self.assertEqual(self.instancia.Encuentra([1,2,3,4],3),True) # 1era prueba del metodo
         self.assertEqual(self.instancia.Encuentra([1,2,3,4],7),False) # 2da prueba del metodo
+    def test_ObtenerPares(self):
+        self.assertEqual(self.instancia.ObtienePares(136), 1) # 1era prueba del metodo
+        self.assertEqual(self.instancia.ObtienePares(245), 1) # 2nd prueba del metodo
+
+
 if __name__ == "__main__":
     unittest.main()
